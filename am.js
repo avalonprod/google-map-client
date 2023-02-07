@@ -1,32 +1,38 @@
 function initMap() {
   const dataMap = {
+    // These are general parameters for all			
     general: {
       mapId: "1177521b91f3d8ea",
       zoom: 12,
+      // selector where to put the map			
       insertSelector: "#container-map",
-      logoUrl:
-        "http://floridakeyspass.com/wp-content/uploads/2022/07/Untitled-1-e1661473941550.png",
+      // link to logo			
+      logoUrl: "http://floridakeyspass.com/wp-content/uploads/2022/07/Untitled-1-e1661473941550.png",
+      // specifies whether controls will be displayed on the map if true then will be if false will not be			
       disableDefaultUI: true,
+      // specifies to show all markers or only the current page if true, all markers will be displayed if false, only the marker of the current page will be displayed			
       allMarkers: true,
-
+      // default values when the page is not defined			
+      // Location to center the map and to display the marker			
       defaultBangalore: {
-        lat: 25.095599,
-        lng: -80.437106,
+          lat: 25.095599,
+          lng: -80.437106
       },
-
+      // marker options			
       iconMarker: {
-        urlImgMarker:
-          "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
-
-        size: [20, 29],
-
-        animation: true,
-
-        draggable: false,
-
-        numbering: false,
+          // Default link to marker image			
+          urlImgMarker: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+          // marker size			
+          size: [20, 29],
+          // bouncing animation if true will work if false will not work			
+          animation: true,
+          // Allow marker dragging if true will work if false will not work			
+          draggable: false,
+          // numbering markers if true will work if false will not work			
+          numbering: false
       },
-    },
+  },
+  // This is a set of pages with options for each page		
 
     pages: [
       {
