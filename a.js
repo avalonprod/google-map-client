@@ -118,7 +118,9 @@ function initMap() {
     document.querySelector(dataMap.general.insertSelector).insertAdjacentHTML(
       "afterend",
       `				
-      <div class="root-map">			
+
+      <div class="root-map">	
+	
       <style>			
       #map {			
       width: 100%;			
@@ -189,7 +191,7 @@ function initMap() {
           margin-left: 0;
           margin-right: 0;
   
-          height: 0;
+          height: 500px;
           z-index: -1;
       
       }
@@ -382,3 +384,4 @@ function initMap() {
 }
 
 window.initMap = initMap;
+
