@@ -72,6 +72,7 @@ function initMap() {
   getPagesRequest();
   function setData(data) {
     dataMap.pages = data;
+    console.log(data)
     init();
   }
   function init() {
