@@ -124,7 +124,7 @@ function initMap() {
       <style>			
       #map {			
       width: 100%;			
-      height: 500px;			
+      height: 260px;			
       position: relative !important;			
       }			
       .map-container {			
