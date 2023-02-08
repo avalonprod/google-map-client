@@ -25,7 +25,7 @@ function initMap() {
             // marker size			
             size: [20, 28],
             // bouncing animation if true will work if false will not work			
-            animation: true,
+            animation: false,
             // Allow marker dragging if true will work if false will not work			
             draggable: false,
             // numbering markers if true will work if false will not work			
@@ -215,6 +215,7 @@ function initMap() {
             border-radius: 8px;
             /* width: 800px; */
             /* height: 220px; */
+            max-height: 250px
           
         }
 
@@ -223,6 +224,7 @@ function initMap() {
             height: auto;
             padding: 5px;
             display: flex;
+            max-height: 250px
             /* grid-template-columns: 1fr 4fr; */
         }
 
@@ -241,13 +243,14 @@ function initMap() {
         }
         .popup-title {
             color: #198fd9;
-            
+            font-size: 25px !important;
         }
         .popup-text {
             width: auto;
-            font-size: 18px;
+            font-size: 15px;
             font-weight: 600;
             margin-right: 40px;
+            
         }
 
         .subtitle {
@@ -263,6 +266,7 @@ function initMap() {
             grid-template-rows: 1fr 1fr 1fr;
             grid-template-columns: 1fr 1fr;
             color: #000;
+            margin-left: 20px
         }
 
         .popup-links a {
@@ -294,7 +298,7 @@ function initMap() {
           `
       );
   
-      // function initMap() {
+    
       const bangalore = dataPages.bangalore;
   
   
@@ -306,8 +310,7 @@ function initMap() {
         disableDefaultUI: dataMap.general.disableDefaultUI ? false : true,
       });
       addMarker(map);
-      // }
-     
+
       function addMarker(map) {
         dataMarker.forEach(([position, id, dataPopup, urlImgMarker], i) => {
           let dataLinks = "";
